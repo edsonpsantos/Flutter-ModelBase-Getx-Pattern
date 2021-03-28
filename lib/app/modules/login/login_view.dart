@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:modelo_getx_estrutura/app/modules/login/login_controller.dart';
 
-class LoginPage extends GetView<LoginController> {
+class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

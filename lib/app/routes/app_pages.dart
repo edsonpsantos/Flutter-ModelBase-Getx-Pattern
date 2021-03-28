@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:modelo_getx_estrutura/app/modules/initial/initial_binding.dart';
-import 'package:modelo_getx_estrutura/app/modules/initial/initial_page.dart';
+import 'package:modelo_getx_estrutura/app/modules/initial/initial_view.dart';
 import 'package:modelo_getx_estrutura/app/routes/app_routes.dart';
 
 class AppPages {
@@ -9,7 +9,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: Routes.INITIAL,
-      page: () => InitialPage(),
+      page: () => InitialView(),
       binding: InitialBinding(),
     ),
   ];
