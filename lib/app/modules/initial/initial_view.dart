@@ -11,15 +11,22 @@ class InitialView extends GetView<InitialController> {
         title: Text('InitialPage'),
         actions: [
           IconButton(
-              icon: Icon(Icons.cake),
-              color: Colors.red,
+              icon: Icon(Icons.add_circle_outline),
+              color: Colors.white,
               onPressed: () {
                 controller.getClick();
               }),
         ],
       ),
       body: SafeArea(
-        child: Text('InitialController'),
+        child: Center(
+          child: Obx(
+            () => Text(
+              "Botão clicado ${controller.num} vezes.",
+              style: TextStyle(fontSize: 28),
+            ),
+          ),
+        ),
       ),
     );
   }

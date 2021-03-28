@@ -1,7 +1,10 @@
 import 'package:get/get.dart';
 
 class InitialController extends GetxController {
-  getClick() {
-    print('Botão clicado');
+  // testa reatividade e gestao de estado com getx
+  RxInt num = 0.obs;
+
+  void getClick() {
+    num.value++;
   }
 }
